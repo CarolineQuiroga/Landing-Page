@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   background: #333;
+   color: #fff;
+   line-height: 1.3;
+   height: 100vh;
+   /* overflow: hidden; */
+}
+.container {
+    position: flex;
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+    /* overflow-y: scroll;
+    scroll-behavior:smooth;
+    scroll-snap-type: y mandatory; */
+    overflow: auto;
+
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex; 
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0.7);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content:center;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+} 
+
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f4f4;
+}
+.navbar ul li a:hover {
+    color: skyblue;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width:100%;
+    height:100vh;
+    scroll-snap-align: center;
+    margin: 10px;
+    padding-top: 100px;
+
+}
+section h3{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+section p {
+   font-size: 1.1rem;
+
+}
+
+.img-resize {
+    margin-top: 10px;
+    height:700px;
+    object-fit: cover;
+    object-position: top;
+    padding-top:10px;
+}
+
+.row {
+    display: flex;
+    margin-top: auto;
+    position:row;
+    width: 100%;
+}
+  
+.wrapper:hover .image {
+    opacity: 0.3;
+
+}
+  
+.wrapper:hover .middle {
+    opacity: 1;
+   
+}
+  
+.text {
+    background-position-x: center;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 10%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 800%;
+}
+.img{
+    top: 0;
+    z-index: 1;
+    opacity: 1;
+    display: flex;
+    width: 100%;
+    margin-top: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    background:no-repeat center cover;
+}
+  
+.middle { 
+    transition: .5s ease;
+    opacity: 50%;
+    height: 100%;
+    display: flex;
+    position: row;
+    position: relative;
+    flex-direction: row;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+    -ms-transform: translate(-100%, -100%);
+    text-align: auto;
+}
+/* Section Images*/
+section#graphicdesign {
+    background:rgb(102, 138, 139)no-repeat center cover;
+}
